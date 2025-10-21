@@ -32,13 +32,13 @@ function Navbar() {
                                 className="text-white transform hover:scale-125 px-2 py-1 rounded text-lg font-bold transition-colors duration-200"
                             >Home</Link>
                             <Link 
-                                to="/login" 
-                                className="text-white transform hover:scale-125 px-2 py-1 rounded text-lg font-bold transition-colors duration-200"
-                            >Login</Link>
-                            <Link 
                                 to="/dashboard" 
                                 className="text-white transform hover:scale-125 px-3 py-1 rounded text-lg font-bold transition-colors duration-200"
                             >Dashboard</Link>
+                            <Link 
+                                to="/login" 
+                                className="text-white transform hover:scale-125 px-2 py-1 rounded text-lg font-bold transition-colors duration-200"
+                            >Login</Link>
                         </div>
                     </div>
                     

@@ -41,15 +41,60 @@ export default function Login() {
     
 
     return (
-      <div>
-        <h1 className="text-3xl font-bold text-black mb-6">Welcome Back 👋</h1>
-        <div className='flex items-center'>
-            <form onClick={handleSubmit} className="bg-white p-6 rounded-2xl shadow-md w-80 flex flex-col gap-3">
-                <input type="text" name="name" className="border p-2 rounded" placeholder="Email" value={formData.email} onChange={handleChange} required/>
-                <input className="border p-2 rounded" type="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
-                <button type="submit" className="bg-emerald-500 text-white py-2 rounded hover:bg-emerald-600">Sign In</button>
-                <Link to="/register" className="text-blue-600 font-bold text-sm">Don't have an account? Sign up here</Link>
+      <div className="pt-16 sm:pt-20 min-h-screen bg-gradient-to-br from-emerald-50 via-blue-50 to-purple-50 flex items-center justify-center p-4">
+        <div className="w-full max-w-lg">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-gray-800 mb-2">Welcome Back 👋</h1>
+            <p className="text-gray-600">Sign in to your account to continue</p>
+          </div>
+          
+          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-white/20">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                  <input 
+                    type="email" 
+                    name="email" 
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-all duration-200 text-lg" 
+                    placeholder="Enter your email" 
+                    value={formData.email} 
+                    onChange={handleChange} 
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                  <input 
+                    name="password" 
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-all duration-200 text-lg" 
+                    type="password" 
+                    placeholder="Enter your password" 
+                    value={formData.password} 
+                    onChange={handleChange} 
+                    required 
+                  />
+                </div>
+              </div>
+              
+              <button 
+                type="submit" 
+                className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-4 rounded-xl font-semibold text-lg hover:from-emerald-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                Sign In
+              </button>
+              
+              <div className="text-center">
+                <Link 
+                  to="/register" 
+                  className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors duration-200"
+                >
+                  Don't have an account? Sign up here
+                </Link>
+              </div>
             </form>
+          </div>
         </div>
       </div>
     );
