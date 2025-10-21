@@ -1,10 +1,6 @@
-import Navbar from '../components/navbar';
-
 function Home() {
     return (
-
     <div>
-        <Navbar/>
         <div id="container"   className="">
             <div className=''>
             <card> </card>
