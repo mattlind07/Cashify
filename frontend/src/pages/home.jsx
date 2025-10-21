@@ -5,7 +5,13 @@ function Home() {
 
     <div>
         <Navbar/>
-        <div className="pt-16">
+        <div id="container"   className="">
+            <div className=''>
+            <card> </card>
+            </div>
+            <div className=''>
+            <card></card>
+            </div>
         </div>
         
     </div>
