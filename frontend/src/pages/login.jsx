@@ -1,5 +1,4 @@
-import { PassThrough } from 'stream';
-import Register from './register';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Login() {
@@ -11,7 +10,7 @@ export default function Login() {
   const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
-    setFormData({...FormData, [e.target.name]: e.target.value });
+    setFormData({...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {

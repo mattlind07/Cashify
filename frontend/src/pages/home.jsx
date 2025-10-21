@@ -1,12 +1,15 @@
+import React from 'react';
+import Card from '../components/card';
+
 function Home() {
     return (
     <div>
         <div id="container"   className="">
             <div className=''>
-            <card> </card>
+            <Card> </Card>
             </div>
             <div className=''>
-            <card></card>
+            <Card></Card>
             </div>
         </div>
         
