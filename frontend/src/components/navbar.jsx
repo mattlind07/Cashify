@@ -10,7 +10,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 w-full bg-[#3A506B] shadow-md border-b border rounded-2xl border-gray-100 z-50">
+        <nav className="fixed top-0 left-0 right-0 w-full bg-[#3A506B] shadow-md border-b border-gray-100 z-50">
             <div className="w-full px-3 sm:px-4 lg:px-6 py-2 sm:py-3 md:py-4">
                 <div className="flex justify-between items-center h-12 sm:h-14">
                     {/* Logo */}
@@ -22,7 +22,7 @@ function Navbar() {
                                 alt="Cashify Logo"
                             />
                         </Link>
-                        <div className = "ml-8 text-white rounded text-3xl font-bold">
+                        <div className = "ml-8 text-white rounded text-2xl font-bold">
                             <span>
                             CASHIFY
                             </span>
