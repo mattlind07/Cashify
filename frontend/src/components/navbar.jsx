@@ -22,6 +22,11 @@ function Navbar() {
                                 alt="Cashify Logo"
                             />
                         </Link>
+                        <div className = "ml-8 text-white rounded text-3xl font-bold">
+                            <span>
+                            CASHIFY
+                            </span>
+                        </div>
                     </div>
                     
                     {/* Navigation Links */}
