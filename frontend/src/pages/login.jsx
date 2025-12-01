@@ -93,6 +93,13 @@ export default function Login() {
                   Don't have an account? Sign up here
                 </Link>
               </div>
+              <div className="text-center">
+                <Link 
+                  to="/dashboard"
+                  className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200">
+                  Continue as guest
+                </Link>
+              </div>
             </form>
           </div>
         </div>
