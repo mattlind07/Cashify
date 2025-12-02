@@ -1,6 +1,13 @@
 {
     "private": true,
     "type": "module",
-    "workspaces": ["frontend"]
-  }
-  
+    "workspaces": [
+        "frontend"
+    ],
+    "engines": {
+        "node": "20.x"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.3"
+    }
+}

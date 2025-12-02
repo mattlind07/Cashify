@@ -17,7 +17,7 @@ function Navbar() {
                     <div className="flex items-center">
                         <Link to="/" className="flex items-center">
                             <img 
-                                className="h-12 w-auto sm:h-14 md:h-16 rounded-lg" 
+                                className="h-12 w-auto sm:h-14 md:h-16 rounded-full overflow-hidden" 
                                 src={logo} 
                                 alt="Cashify Logo"
                             />
