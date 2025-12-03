@@ -4,8 +4,9 @@ const cors = require("cors");
 const app = express();
 
 // Routing
-const userRoutes = require("./routes/users");
 const transactionRoutes = require("./routes/transactions");
+const loginRoute = require("./routes/auth/login");
+const registerRoute = require("./routes/auth/register");
 
 
 
@@ -17,11 +18,9 @@ app.use(cors({
 
 
 // Api endpoints
-app.use("/api/users", userRoutes);
 app.use("/api/transactions", transactionRoutes);
-// login and register are handled by the /api/users router now
-
-
+app.use("/api/login", loginRoute);
+app.use("/api/register", registerRoute);
 
 
 
